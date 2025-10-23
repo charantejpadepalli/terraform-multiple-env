@@ -12,11 +12,6 @@ variable "ami_id" {
 variable "instance_type" {
     type = string
 }
-variable "sg_name" {
-    type = string
-    default = "allow_all"
-    description = "Security Group name attached to EC2 instance" 
-}
 variable "cidr" {
     type = list 
     default = ["0.0.0.0/0"] 
